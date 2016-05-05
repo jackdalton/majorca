@@ -1,0 +1,30 @@
+{
+  "name": "majorca",
+  "description": "Simple JavaScript string encryption",
+  "version": "1.0.0",
+  "keywords": [
+    "majorca",
+    "encrypt"
+  ],
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackdalton/majorca.git"
+  },
+  "author": "Jack Dalton <jack@jackdalton.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jackdalton/majorca/issues"
+  },
+  "homepage": "https://github.com/jackdalton/majorca#readme"
+}
