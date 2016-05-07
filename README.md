@@ -1,6 +1,8 @@
 # Majorca
 
-Majorca is a simple utility to encrypt and decrypt strings with a symmetric-key algorithm.
+Majorca is a simple utility to encrypt and decrypt strings with a basic symmetric-key algorithm.
+
+Encrypted strings are compressed using a LZ77 based compression algorithm in base62.
 
 ## Example
 
@@ -10,6 +12,6 @@ To encrypt a string, create a new instance of Majorca:
 let Majorca = require("majorca");
 let key = 13 // a (large) prime number.
 let instance = new Majorca(key);
-instance.encrypt("test"); // returns "1508?1313?1495?1508"
-instance.decrypt("1508?1313?1495?1508"); // returns "test"
+instance.encrypt("test"); // returns "sJNIQXJL2C2FsMRN2FxPD"
+instance.decrypt("sJNIQXJL2C2FsMRN2FxPD"); // returns "test"
 ```

@@ -1,7 +1,7 @@
 {
   "name": "majorca",
   "description": "Simple JavaScript string encryption",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "keywords": [
     "majorca",
     "encrypt"
@@ -13,7 +13,9 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lzbase62": "^1.4.6"
+  },
   "scripts": {
     "test": "mocha"
   },

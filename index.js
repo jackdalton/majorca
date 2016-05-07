@@ -1,3 +1,5 @@
+var lzbase62 = require("lzbase62");
+
 module.exports = (function(key) {
     var _key;
     function Majorca(key) {
@@ -20,9 +22,10 @@ module.exports = (function(key) {
             out += v + "?";
         });
         out = out.slice(0, -1);
-        return out;
+        return lzbase62.compress(out);
     };
     Majorca.prototype.decrypt = function(str) {
+        str = lzbase62.decompress(str);
         var bytes = str.split("?");
         var out = "";
         bytes.forEach(function(v) {
