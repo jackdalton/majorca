@@ -1,4 +1,4 @@
-# Majorca
+# Majorca [![Build Status](https://travis-ci.org/jackdalton/majorca.svg?branch=master)](https://travis-ci.org/jackdalton/majorca)
 
 Majorca is a simple utility to encrypt and decrypt strings with a basic symmetric-key algorithm.
 
