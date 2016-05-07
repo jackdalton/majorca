@@ -22,10 +22,11 @@ module.exports = (function(key) {
             out += v + "?";
         });
         out = out.slice(0, -1);
-        return lzbase62.compress(out);
+        var compressed = lzbase62.compress(out);
+        return out.length > compressed.length ? "c" + compressed : "n" + out;
     };
     Majorca.prototype.decrypt = function(str) {
-        str = lzbase62.decompress(str);
+        str = str[0] == "c" ? lzbase62.decompress(str) : str.substring(1);
         var bytes = str.split("?");
         var out = "";
         bytes.forEach(function(v) {

@@ -8,9 +8,9 @@ describe("Majorca", function() {
         assert.equal(typeof Majorca, "function");
     });
     it("should encrypt a string properly", function() {
-        assert.equal(new Majorca(testPrime).encrypt("test"), "sJNIQXJL2C2FsMRN2FxPD");
+        assert.equal(typeof new Majorca(testPrime).encrypt("test"), "string");
     });
     it("should decrypt a string properly", function() {
-        assert.equal(new Majorca(testPrime).decrypt("sJNIQXJL2C2FsMRN2FxPD"), "test");
+        assert.equal(new Majorca(testPrime).decrypt(new Majorca(testPrime).encrypt("test")), "test");
     });
 });
