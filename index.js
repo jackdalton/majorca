@@ -26,7 +26,7 @@ module.exports = (function(key) {
         return out.length > compressed.length ? "c" + compressed : "n" + out;
     };
     Majorca.prototype.decrypt = function(str) {
-        str = str[0] == "c" ? lzbase62.decompress(str) : str.substring(1);
+        str = str[0] == "c" ? lzbase62.decompress(str.substring(1)) : str.substring(1);
         var bytes = str.split("?");
         var out = "";
         bytes.forEach(function(v) {
