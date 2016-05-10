@@ -1,5 +1,7 @@
 # Majorca [![Build Status](https://travis-ci.org/jackdalton/majorca.svg?branch=master)](https://travis-ci.org/jackdalton/majorca)
 
+> **This project should not be used for anything important. Use Node.js's built-in [crypto module](https://nodejs.org/api/crypto.html) instead.**
+
 Majorca is a simple utility to encrypt and decrypt strings with a basic symmetric-key algorithm.
 
 Encrypted strings are compressed using a LZ77 based compression algorithm in base62.
