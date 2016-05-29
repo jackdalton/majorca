@@ -19,3 +19,5 @@ let instance = new Majorca(key);
 instance.encrypt("test"); // returns "n1508?1313?1495?1508"
 instance.decrypt("n1508?1313?1495?1508"); // returns "test"
 ```
+
+This project has also been ported to Python [here](https://github.com/jackdalton/majorca.py).
